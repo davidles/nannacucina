@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:Restaurant:.</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Italianno&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <!--Font Aweasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Calendar-->
+    <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"
+        integrity="sha512-f0tzWhCwVFS3WeYaofoLWkTP62ObhewQ1EZn65oSYDZUg1+CyywGKkWzm8BxaJj5HGKI72PnMH9jYyIFz+GH7g=="
+        crossorigin="anonymous" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--GLiderJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link id="theme" rel="stylesheet" href="css/light.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="row top justify-content-space-between">
+
+
+            <div class="col col-sm-8">
+                <div class="container">
+                    <div class="info d-flex justify-content-start">
+                        <ul class="lista-top">
+                            <li class="item-top">
+                                <i class="fas fa-phone"></i>
+                            </li>
+                            <li class="item-top">
+                                +54 351 219 1034
+                            </li>
+                            <li class="item-top">
+                                <i class="fas fa-envelope"></i>
+                            </li>
+                            <li class="item-top">
+                                nannacucina@gmail.com
+                            </li>
+                        </ul>
+                        <div id="theme-selector">
+                            <span>Dark Mode</span>
+                            <div id="to-moon">
+                                <i class="far fa-moon"></i>
+                            </div>
+                            <div id="to-light">
+                                <i class="far fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm">
+                <div class="container">
+                    <div class="social-media-login d-flex justify-content-end">
+                        <ul class="lista-top">
+                            <li class="item-top">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li class="item-top">
+                                <i class="fab fa-pinterest-p"></i>
+                            </li>
+                            <li class="item-top">
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                            <li class="item-top">
+                                <i class="fas fa-user"></i>
+                            </li>
+                            <li class="item-top">Login</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <section class="portada">
+        <div class="row">
+            <div class="col col-sm ">
+                <div class="txt-portada">
+                    <h1>Nanna Cucina</h2>
+                        <input type="button" class="cta" id="btn" value="Reservar">
+                </div>
+
+            </div>
+
+            
+        </div>
+
+
+    </section>
+
+    <div class="container">
+
+        <div id="modal" class="modal">
+            <form name="formulario" id="form">
+
+                <span>Reservá tu mesa!</span>
+
+                <input type="text" name="nombre" id="nombre" class="cta" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" class="cta" placeholder="Apellido">
+
+                <!-- <label for="personas">Cantidad de personas</label> -->
+                <select name="cantPersonas" id="personas" class="cta">
+                    <option selected>Nº de personas</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                </select>
+
+
+                <input type="text" id="calendar" class="cta" placeholder="Seleccionar fecha" />
+
+
+                <input type="submit" value="Guardar" class="cta btn " id="submit">
+
+
+            </form>
+
+        </div>
+
+        <div id="modal-menu" class="modal modal-menu"></div>
+
+
+        <div class="contenedor">
+            <ul class="img-lista">
+                <li class="enlaces activo" data-name="todas">todo</li>
+                <li class="enlaces" data-name="empanadas">empanadas</li>
+                <li class="enlaces" data-name="pizzas">pizzas</li>
+                <li class="enlaces" data-name="sandwich">sandwich</li>
+            </ul>
+            <div class="fotos">
+                <div class="caja filtro pizzas"><img src="img/1.jpg" alt="" class="imagen"></div>
+                <div class="caja filtro sandwich"><img src="img/sand-1.png" alt="" class="imagen"></div>
+                <div class="caja filtro pizzas"><img src="img/2.jpg" alt="" class="imagen"></div>
+                <div class="caja filtro empanadas"><img src="img/emp-2.jpg" alt="" class="imagen"></div>
+                <div class="caja filtro empanadas"><img src="img/emp-3.png" alt="" class="imagen"></div>
+                <div class="caja filtro sandwich"><img src="img/sand-2.png" alt="" class="imagen"></div>
+                <div class="caja filtro empanadas"><img src="img/jyq.png" alt="" class="imagen"></div>
+                <div class="caja filtro empanadas"><img src="img/emp-4.png" alt="" class="imagen"></div>
+                <div class="caja filtro sandwich"><img src="img/sand-3.png" alt="" class="imagen"></div>
+                <div class="caja filtro empanadas"><img src="img/arabe.png" alt="" class="imagen"></div>
+                <div class="caja filtro pizzas"><img src="img/especial.png" alt="" class="imagen"></div>
+                <div class="caja filtro pizzas"><img src="img/rucula.png" alt="" class="imagen"></div>
+            </div>
+        </div>
+
+
+
+
+        <div id="reservaMenu">
+            <span class="titulo">Lista de precios</span>
+            <button id="precio-empanadas" class="icono">
+                <img src="img/empanada.png" alt="" class="iconos-precio">
+            </button>
+
+            <button id="precio-pizzas" class="icono">
+                <img src="img/pizza.png" alt="" class="iconos-precio">
+            </button>
+
+            <button id="precio-sandwich" class="icono">
+                <img src="img/hambur.png" alt="" class="iconos-precio">
+            </button>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-8">
+                <div id="tabla" class="table-striped"></div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="card">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--Calendar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"
+        integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw=="
+        crossorigin="anonymous"></script>
+
+    <!--Modal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <!--GliderJS-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+
+    <!--Script-->
+    <script src="js/app.js"></script>
+    <script src="js/imagenes.js"></script>
+
+
+</body>
+
+</html>

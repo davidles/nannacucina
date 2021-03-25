@@ -1,0 +1,70 @@
+{
+    "empanadas": [
+        {
+            "nombre": "Arabes",
+            "precio": 310
+            
+        },
+
+        {
+            "nombre": "Pollo",
+            "precio": 210
+        },
+
+        {
+            "nombre": "Carne picada",
+            "precio": 520
+        },
+
+        {
+            "nombre": "Jamón y Queso",
+            "precio": 260
+        }
+    ],
+
+    "pizzas": [
+        {
+            "nombre": "Muzzarella",
+            "precio": 310
+        },
+
+        {
+            "nombre": "Calabresa",
+            "precio": 210
+        },
+
+        {
+            "nombre": "Pickles",
+            "precio": 520
+        },
+
+        {
+            "nombre": "Especial",
+            "precio": 260
+        }
+    ],
+
+    "sandwich": [
+        {
+            "nombre": "Hambur Completa",
+            "precio": 310
+            
+        },
+
+        {
+            "nombre": "Hambur Triple",
+            "precio": 210
+        },
+
+        {
+            "nombre": "Lomito Simple",
+            "precio": 520
+        },
+
+        {
+            "nombre": "Lomito Completo",
+            "precio": 260
+        }
+    ]
+
+}

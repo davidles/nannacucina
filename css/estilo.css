@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+
+}
+
+.top{
+  background: #000;
+  color: #ffff;
+  height: 40px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  height: 40px;
+  cursor: none;
+}
+
+.social-media-login{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  height: 40px;
+}
+
+
+.item-top{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  border: none;
+  box-shadow: none;
+  padding: 0 2px;
+}
+
+.item-top:hover{
+  padding: 0 20px;
+  color: #fff;
+  background: #000;
+}
+
+i > .fas{
+  color: red;
+}
+
+
+#theme-selector{
+  display: flex;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#to-moon, #to-light{
+  width: 40px;
+  height: 38px;
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+  #to-light{
+    background: #020202;
+    color: #ffffff;
+  }
+
+  #to-moon{
+  background: #020202;
+  color: #ffffff;
+}
+
+section{
+  height: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.portada{
+  margin: 0;
+  overflow: hidden;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.5158263989189426) 0%, rgba(0,0,74,0.5018207966780462) 35%), url("../img/pizza-port.jpg");
+  background-size: 100% 100%;
+
+}
+
+h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 7em;
+  margin: 20px;
+  color: #fff;
+}
+
+h2{
+  font-family: 'Italianno', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.txt-portada{
+  text-align: center;
+}
+
+ .contenedor-texto{
+  background: rgba(26, 26, 26, 0.459);
+  padding: 20px;
+  width: 25em;
+} 
+
+
+a{
+  text-decoration: none;
+}
+
+.promo{
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+section p{
+  margin-bottom: 15px;
+  color: rgb(184, 180, 180);
+}
+
+.imgPortada{
+  width: 20em;
+  height: 15em;
+  border-radius: 50%;
+}
+
+
+
+.cta{
+  display: inline-block;
+  padding: 7px;
+  margin: 10px;
+  width: 150px;
+  border: 1px solid #F2994A;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #F2994A;
+  outline: none;
+}
+
+.cta:hover{
+  color: #F2994A;
+  background: white;
+  border: 1px solid #4af2e4;
+}
+
+
+
+/* FORMULARIO*/
+
+form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+   /* .seleccionado{
+  display: none;
+}    */
+
+.active{
+  background: black;
+  color: blanchedalmond;
+}
+
+
+
+
+.mesa{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  background: rgb(145, 99, 15);
+  color: beige;
+  cursor: pointer;
+
+}
+
+.mesa:hover{
+  background: rgb(90, 231, 108);
+  color: rgb(145, 99, 15);
+}
+
+
+
+
+#modal{
+  display: none;
+}
+
+
+.modal-menu{
+  height: auto;
+}
+
+.mesas{
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn{
+  margin-top: 25px;
+}
+
+
+.ocultar{
+  display: none;
+}
+
+
+
+a.close-modal{
+  position: relative;
+  top: 5px;
+  right: 55px;
+}
+
+.radio{
+  display: none;
+}
+
+
+
+
+#reservaMenu{
+  background: rgba(13, 150, 65, 0.527);
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;  
+  padding: 10px;
+}
+
+.menu{
+  width: 100px;
+  height: 100px;
+  outline: none;
+}
+
+#modal-grupal{
+  width: auto;
+  height: auto;
+}
+
+/*--Imagenes--*/
+
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.img-lista{
+  position: relative;
+  width: 100%;
+  margin: 60px 0;
+}
+
+
+
+
+
+.contenedor .fotos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} 
+
+
+.contenedor .caja{
+  width: 32%;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 12px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px -5px rgba(0,0,0,0.75);
+
+}
+
+.contenedor .caja .imagen{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.imagen:hover{
+  transform: scale(1.2);
+  transition: all ease 1.5s;
+  cursor: pointer;
+}
+
+.iconos-precio{
+  width: 2.2em;
+  height: 2em;
+}
+
+.icono{
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 80px;
+  border: 1px solid #F2994A;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #F2994A;
+  outline: none;
+}
+
+
+
+
+
