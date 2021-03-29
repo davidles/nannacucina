@@ -33,10 +33,5 @@ $(document).ready(function(){
         }
     }
 
-    // $(".caja").hover( function(){
-    //     $('.img-overlay').css('opacity', 1)
-    // })
-
-
 
 })
