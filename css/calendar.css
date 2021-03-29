@@ -1,0 +1,16 @@
+ .xdsoft_label{
+    color: black;
+    background: blanchedalmond;
+}
+
+.xdsoft_prev{
+    background-color: blanchedalmond;
+} 
+
+.xdsoft_datetimepicker{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.active{
+    background: blanchedalmond;
+}

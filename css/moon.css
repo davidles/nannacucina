@@ -42,9 +42,10 @@ th,td{
   border: 1px solid white;
 }
 
-.activo{
-  background: none;
-  color: black;
+ul li:hover, .activo{
+  background: #fff;
+  color: #000;
+  cursor: pointer;
 }
 
 ul li{
@@ -63,3 +64,18 @@ ul li:hover, .activo{
   color: #000;
   cursor: pointer;
 }
+
+
+ #to-light{
+  background: #020202;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+#to-moon{
+background: #020202;
+color: #ffffff;
+padding: 5px;
+text-align: center;
+} 

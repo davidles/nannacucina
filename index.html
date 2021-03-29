@@ -47,6 +47,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/estilo.css">
     <link id="theme" rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="css/calendar.css">
 
 
 
@@ -54,63 +55,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="row top justify-content-space-between">
-
-
-            <div class="col col-sm-8">
-                <div class="container">
-                    <div class="info d-flex justify-content-start">
-                        <ul class="lista-top">
-                            <li class="item-top">
-                                <i class="fas fa-phone"></i>
-                            </li>
-                            <li class="item-top">
-                                +54 351 219 1034
-                            </li>
-                            <li class="item-top">
-                                <i class="fas fa-envelope"></i>
-                            </li>
-                            <li class="item-top">
-                                nannacucina@gmail.com
-                            </li>
-                        </ul>
-                        <div id="theme-selector">
-                            <span>Dark Mode</span>
-                            <div id="to-moon">
-                                <i class="far fa-moon"></i>
-                            </div>
-                            <div id="to-light">
-                                <i class="far fa-lightbulb"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header id="top">
+        <div class="row d-flex justify-content-center">
             <div class="col col-sm">
-                <div class="container">
-                    <div class="social-media-login d-flex justify-content-end">
-                        <ul class="lista-top">
-                            <li class="item-top">
-                                <i class="fab fa-facebook-f"></i>
-                            </li>
-                            <li class="item-top">
-                                <i class="fab fa-pinterest-p"></i>
-                            </li>
-                            <li class="item-top">
-                                <i class="fab fa-instagram"></i>
-                            </li>
-                            <li class="item-top">
-                                <i class="fas fa-user"></i>
-                            </li>
-                            <li class="item-top">Login</li>
-                        </ul>
-                    </div>
-                </div>
+                    <p id="promoSemana">Esta semana 20%de descuento en pizzas</p> 
             </div>
         </div>
 
     </header>
+
+    <div class="row" id="retencion">
+        <div class="col col-sm">
+            <div id="promocion">
+                <p id="txt-promo"></p> 
+                <input type="button" value="Mi Código" id="cupon" class="cta">
+            </div>
+        </div>
+    </div>
 
 
 
@@ -128,7 +89,7 @@
 
             </div>
 
-            
+
         </div>
 
 
@@ -141,11 +102,13 @@
 
                 <span>Reservá tu mesa!</span>
 
-                <input type="text" name="nombre" id="nombre" class="cta" placeholder="Nombre">
-                <input type="text" name="apellido" id="apellido" class="cta" placeholder="Apellido">
+                <input type="text" name="nombre" id="nombre" class="cta" placeholder="Nombre" required>
+                <input type="text" name="apellido" id="apellido" class="cta" placeholder="Apellido" required>
+                <input type="email" name="email" id="email" class="cta" placeholder="Email" required>
+                <input type="tel" name="telefono" id="telefono" class="cta" placeholder="Teléfono" required>
 
                 <!-- <label for="personas">Cantidad de personas</label> -->
-                <select name="cantPersonas" id="personas" class="cta">
+                <select name="cantPersonas" id="personas" class="cta" required>
                     <option selected>Nº de personas</option>
                     <option value="1">1 persona</option>
                     <option value="2">2 personas</option>
@@ -153,7 +116,7 @@
                 </select>
 
 
-                <input type="text" id="calendar" class="cta" placeholder="Seleccionar fecha" />
+                <input type="text" id="calendar" class="cta" placeholder="Seleccionar fecha" required />
 
 
                 <input type="submit" value="Guardar" class="cta btn " id="submit">
@@ -174,26 +137,126 @@
                 <li class="enlaces" data-name="sandwich">sandwich</li>
             </ul>
             <div class="fotos">
-                <div class="caja filtro pizzas"><img src="img/1.jpg" alt="" class="imagen"></div>
-                <div class="caja filtro sandwich"><img src="img/sand-1.png" alt="" class="imagen"></div>
-                <div class="caja filtro pizzas"><img src="img/2.jpg" alt="" class="imagen"></div>
-                <div class="caja filtro empanadas"><img src="img/emp-2.jpg" alt="" class="imagen"></div>
-                <div class="caja filtro empanadas"><img src="img/emp-3.png" alt="" class="imagen"></div>
-                <div class="caja filtro sandwich"><img src="img/sand-2.png" alt="" class="imagen"></div>
-                <div class="caja filtro empanadas"><img src="img/jyq.png" alt="" class="imagen"></div>
-                <div class="caja filtro empanadas"><img src="img/emp-4.png" alt="" class="imagen"></div>
-                <div class="caja filtro sandwich"><img src="img/sand-3.png" alt="" class="imagen"></div>
-                <div class="caja filtro empanadas"><img src="img/arabe.png" alt="" class="imagen"></div>
-                <div class="caja filtro pizzas"><img src="img/especial.png" alt="" class="imagen"></div>
-                <div class="caja filtro pizzas"><img src="img/rucula.png" alt="" class="imagen"></div>
+                <div class="caja filtro pizzas">
+                    <div class="img-overlay">
+                        <div class="img-title">pizza nanna</div>
+                        <div class="img-txt">
+                            jamón, muzzarella, morrones, aceitunas negras
+                        </div>
+                    </div>
+
+                    <img src="img/1.jpg" alt="" class="imagen">
+
+                </div>
+                <div class="caja filtro sandwich">
+                    <div class="img-overlay">
+                        <div class="img-title">Hamburguesa Completa</div>
+                        <div class="img-txt">
+                            Lechuga, tomate, jamón, queso, c/Papas fritas
+                        </div>
+                    </div>
+                    <img src="img/sand-1.png" alt="especial" class="imagen">
+
+                </div>
+                <div class="caja filtro pizzas">
+                    <div class="img-overlay">
+                        <div class="img-title">Pizza marina</div>
+                        <div class="img-txt">
+                            salsa con cebollas salteadas, anchoas, muzzarella, queso parmesano,rúcula
+                        </div>
+                    </div>
+                    <img src="img/2.jpg" alt="hamburguesa completa" class="imagen">
+                </div>
+                <div class="caja filtro empanadas">
+                    <div class="img-overlay">
+                        <div class="img-title">empanadas al horno</div>
+                        <div class="img-txt">
+                            carne molida, cebolla, pimiento
+                        </div>
+                    </div>
+                    <img src="img/emp-2.jpg" alt="marinera" class="imagen">
+                </div>
+                <div class="caja filtro empanadas">
+                    <div class="img-overlay">
+                        <div class="img-title">empanadas fritas</div>
+                        <div class="img-txt">
+                            carne molida, cebolla, pimiento
+                        </div>
+                    </div>
+                    <img src="img/emp-3.png" alt="criollas al horno" class="imagen">
+                </div>
+                <div class="caja filtro sandwich">
+                    <div class="img-overlay">
+                        <div class="img-title">Hamburguesa Nanna</div>
+                        <div class="img-txt">
+                            Lechuga, tomate, jamón, queso cheddar, panceta c/Papas fritas
+                        </div>
+                    </div>
+                    <img src="img/sand-2.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro empanadas">
+                    <div class="img-overlay">
+                        <div class="img-title">empanadas JyQ</div>
+                        <div class="img-txt">
+                            jamos, queso
+                        </div>
+                    </div>
+                    <img src="img/jyq.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro empanadas">
+                    <div class="img-overlay">
+                        <div class="img-title">empanadas de pollo</div>
+                        <div class="img-txt">
+                            pollo, cebolla, morron, cebolla de verdeo
+                        </div>
+                    </div>
+                    <img src="img/emp-4.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro sandwich">
+                    <div class="img-overlay">
+                        <div class="img-title">Lomito completo</div>
+                        <div class="img-txt">
+                            lomo, jamon, queso, lechuga, tomate, mayonesa casera, papas fritas
+                        </div>
+                    </div>
+                    <img src="img/sand-3.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro empanadas">
+                    <div class="img-overlay">
+                        <div class="img-title">empanadas árabes</div>
+                        <div class="img-txt">
+                            carne, cebolla, tomate, condimentos
+                        </div>
+                    </div>
+                    <img src="img/arabe.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro pizzas">
+                    <div class="img-overlay">
+                        <div class="img-title">pizza calabresa</div>
+                        <div class="img-txt">
+                            muzzarella, salame, tomatitos cherry
+                        </div>
+                        
+                    </div>
+                    <img src="img/especial.png" alt="" class="imagen">
+                </div>
+                <div class="caja filtro pizzas">
+                    <div class="img-overlay">
+                        <div class="img-title">super pizza </div>
+                        <div class="img-txt">
+                            La armas con 5 ingredientes a elección (sujeto a disposición)
+                        </div>
+                    </div>
+                    <img src="img/rucula.png" alt="" class="imagen">
+                </div>
             </div>
         </div>
 
 
 
 
-        <div id="reservaMenu">
-            <span class="titulo">Lista de precios</span>
+        <div id="precioMenu">
+            <span class="titulo">Lista de precios</span><br>
             <button id="precio-empanadas" class="icono">
                 <img src="img/empanada.png" alt="" class="iconos-precio">
             </button>
@@ -215,23 +278,77 @@
             </div>
         </div>
 
-
-
-
-        <footer>
-            <div class="card">
-                <div class="card-header">
-                    Featured
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </footer>
+        <div class="wapp-btn">
+            <a href="http://wa.me/543512191034?text=Hola%20quiero%20conocer%20mas%20del%20lugar" target="_blank">
+                <i class="fab fa-whatsapp wapp-btn"></i>
+            </a>
+        </div>
 
     </div>
+
+
+    <footer>
+        <div class="card">
+            <div class="row">
+                <div class="footer">
+                    <div class="col col-sm-4">
+
+                        <div class="info d-flex justify-content-start">
+                            <ul class="lista-top">
+                                <li class="item-top">
+                                    <i class="fas fa-phone"></i>+54 351 219 1034
+                                </li>
+                                <li class="item-top">
+                                    <i class="fas fa-envelope"></i>nannacucina@gmail.com
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-4">
+                        <div id="theme-selector">
+                            <span>Dark Mode</span>
+                            <div id="to-moon">
+                                <i class="far fa-moon"></i>
+                            </div>
+                            <div id="to-light">
+                                <i class="far fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-4">
+                        <div class="container">
+                            <div class="social-media-login d-flex justify-content-end">
+                                <ul class="lista-top">
+                                    <li class="item-top">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </li>
+                                    <li class="item-top">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </li>
+                                    <li class="item-top">
+                                        <i class="fab fa-instagram"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col col-sm d-flex justify-content-center" id="copy">
+                    DAVID LESCANO &copy;
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
     <!--jQuery-->

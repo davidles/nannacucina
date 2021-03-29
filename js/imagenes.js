@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+
     $('.enlaces').click(function(){
         let valor = $(this).attr('data-name')
         
@@ -13,4 +16,27 @@ $(document).ready(function(){
             $(this).addClass('activo').siblings().removeClass()
         })
     })
+
+    $(".imagen:hover").hover(textImg)
+
+    function textImg(){
+        $(".imagen:hover").hover( mouseOver , mouseOut )
+    
+        function mouseOver() {
+            $(this).css({'transform': 'scale(1.2)', 'transition': 'all ease 1.5s'})
+           $('.img-overlay').css({'opacity': 1, 'transform': 'translateY(0)'})
+           
+        }
+       
+        function mouseOut() {
+           $('.img-overlay').css('opacity', 0)
+        }
+    }
+
+    // $(".caja").hover( function(){
+    //     $('.img-overlay').css('opacity', 1)
+    // })
+
+
+
 })

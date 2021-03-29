@@ -1,46 +1,51 @@
 {
     "empanadas": [
         {
-            "nombre": "Arabes",
+            "nombre": "Emp al horno",
             "precio": 310
             
         },
 
         {
-            "nombre": "Pollo",
-            "precio": 210
+            "nombre": "Emp fritas",
+            "precio": 330
         },
 
         {
-            "nombre": "Carne picada",
-            "precio": 520
+            "nombre": "Emp JyQ",
+            "precio": 220
         },
 
         {
-            "nombre": "Jamón y Queso",
+            "nombre": "Emp de pollo",
+            "precio": 260
+        },
+
+        {
+            "nombre": "Emp árabes",
             "precio": 260
         }
     ],
 
     "pizzas": [
         {
-            "nombre": "Muzzarella",
+            "nombre": "Nanna",
             "precio": 310
         },
 
         {
-            "nombre": "Calabresa",
+            "nombre": "Marina",
             "precio": 210
         },
 
         {
-            "nombre": "Pickles",
-            "precio": 520
+            "nombre": "Calabresa",
+            "precio": 260
         },
 
         {
-            "nombre": "Especial",
-            "precio": 260
+            "nombre": "Super Pizza",
+            "precio": 400
         }
     ],
 
@@ -52,18 +57,13 @@
         },
 
         {
-            "nombre": "Hambur Triple",
-            "precio": 210
-        },
-
-        {
-            "nombre": "Lomito Simple",
-            "precio": 520
+            "nombre": "Hambur Nanna",
+            "precio": 450
         },
 
         {
             "nombre": "Lomito Completo",
-            "precio": 260
+            "precio": 360
         }
     ]
 

@@ -6,80 +6,41 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.2em;
 
 }
 
-.top{
-  background: #000;
+ #top{
+  background: rgb(189, 0, 0);
   color: #ffff;
   height: 40px;
   padding: 5px;
-  overflow: hidden;
-}
-
-.info{
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  height: 40px;
-  cursor: none;
-}
-
-.social-media-login{
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  height: 40px;
-}
+} 
 
 
-.item-top{
-  list-style: none;
-  display: inline-block;
-  margin-right: 5px;
-  border: none;
-  box-shadow: none;
-  padding: 0 2px;
-}
-
-.item-top:hover{
-  padding: 0 20px;
-  color: #fff;
-  background: #000;
-}
-
-i > .fas{
-  color: red;
-}
-
-
-#theme-selector{
-  display: flex;
+#retencion{
+  background: rgb(210, 30, 30);
   text-align: center;
-  padding: 0 20px;
 }
 
-#to-moon, #to-light{
-  width: 40px;
-  height: 38px;
-  display: block;
-  cursor: pointer;
-  font-size: 15px;
-  padding: 0 20px;
+
+#txt-promo{
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  
 }
 
-  #to-light{
-    background: #020202;
-    color: #ffffff;
-  }
-
-  #to-moon{
-  background: #020202;
-  color: #ffffff;
+#cupon .cta{
+  width: auto;
 }
+
+#btn{
+  height: 4em;
+}
+
+
 
 section{
   height: 650px;
@@ -126,14 +87,10 @@ a{
   text-decoration: none;
 }
 
-.promo{
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: 10px;
+#promoSemana{
+  font-size: 1em;
   text-align: center;
-  margin-bottom: 5px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -183,34 +140,14 @@ form{
   align-items: center;
 }
 
-   /* .seleccionado{
+   .seleccionado{
   display: none;
-}    */
+}   
 
 .active{
-  background: black;
-  color: blanchedalmond;
+  background: #000;
+  color: #fff;
 }
-
-
-
-
-.mesa{
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  text-align: center;
-  background: rgb(145, 99, 15);
-  color: beige;
-  cursor: pointer;
-
-}
-
-.mesa:hover{
-  background: rgb(90, 231, 108);
-  color: rgb(145, 99, 15);
-}
-
 
 
 
@@ -253,7 +190,7 @@ a.close-modal{
 
 
 
-#reservaMenu{
+#precioMenu{
   background: rgba(13, 150, 65, 0.527);
   width: 100%;
   height: auto;
@@ -292,6 +229,45 @@ a.close-modal{
 
 
 
+.img-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: aliceblue;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  cursor: pointer;
+} 
+
+.img-overlay > *{
+  transform: translateY(30px);
+  transition: transform 1.5s;
+}
+
+.img-overlay:hover{
+  opacity: 1;
+}
+
+.img-overlay:hover > *{
+  transform: translate(0);
+}
+
+.img-txt{
+  text-align: center;
+  color: rgb(212, 211, 211);
+}
+
+.img-title{
+  font-size: 1.4em;
+}
+
+
 
 
 .contenedor .fotos{
@@ -302,6 +278,7 @@ a.close-modal{
 
 
 .contenedor .caja{
+  position: relative;
   width: 32%;
   height: 300px;
   margin-bottom: 20px;
@@ -319,11 +296,8 @@ a.close-modal{
   object-fit: cover;
 }
 
-.imagen:hover{
-  transform: scale(1.2);
-  transition: all ease 1.5s;
-  cursor: pointer;
-}
+
+
 
 .iconos-precio{
   width: 2.2em;
@@ -343,6 +317,113 @@ a.close-modal{
   background: #F2994A;
   outline: none;
 }
+
+.icono:hover, .activado{
+  background: #ffc18a;
+}
+
+a i{
+  color: #fff;
+}
+
+.wapp-btn{
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 4.5em;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a i:hover{
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+
+
+footer{
+  margin-top: 50px;
+  height: auto;
+ 
+}
+
+.footer{  
+  margin: 10px;
+  display: flex;
+  height: auto;
+  align-items: center;
+  padding: 3em;
+}
+
+.card{
+  width: 100%;
+  background: #ffa251;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+  cursor: none;
+}
+
+.social-media-login{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+}
+
+
+.item-top{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  border: none;
+  box-shadow: none;
+  padding: 0 5px;
+  cursor: none;
+}
+
+
+
+.far{
+  font-size: 20px;
+}
+
+
+
+#theme-selector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+}
+
+#to-moon, #to-light{
+  width: 40px;
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  margin: 2px;
+}
+
 
 
 

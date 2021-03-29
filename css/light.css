@@ -48,3 +48,9 @@ body{
     cursor: pointer;
   }
 
+
+   #to-light, #to-moon{
+    background: #fff;
+    color: #020202;
+  } 
+
